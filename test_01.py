@@ -45,3 +45,25 @@
 #         print(88)
 #         q = 2
 
+
+class Bird:
+    def __init__(self):
+        self.hungry = True
+    def eat(self):
+        if self.hungry :
+            print('Ahhh...')
+            self.hungry = False
+        else:
+            print('NO,thanks')
+class SongBird(Bird):
+    def __init__(self):
+        # super().__init__()
+        self.sound = 'DSFSDF'
+    def sing(self):
+        print(self.sound)
+sb = SongBird()
+sb.sing()
+sb.eat()
+sb.eat()
+
+
